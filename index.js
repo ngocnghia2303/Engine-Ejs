@@ -41,50 +41,7 @@ mongoose.set('useFindAndModify', false);
 //use:======> session
 var session = require('express-session');
 var MongoDBStore = require('connect-mongodb-session')(session);
-// var store = new MongoDBStore({
-//     uri: 'mongodb+srv://ngocnghia:nghiadeptrai@khoa-pham2020-buqro.gcp.mongodb.net',
-//     collection: 'ChatApp-LindaHTV'
-// });
 
-// store.on('error', function(error) {
-//     console.log(error);
-// });
-
-// app.use(require('express-session')({
-//     secret: 'This is a secret',
-//     cookie: {
-//       maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
-//     },
-//     store: store,
-//     resave: true,
-//     saveUninitialized: true
-// }));
-
-// var numExpectedSources = 2;
-
-// var store = new MongoDBStore(
-//     {
-//         uri: 'mongodb+srv://ngocnghia:nghiadeptrai@khoa-pham2020-buqro.gcp.mongodb.net/connectTimeoutMS=10',
-//         databaseName: 'ChatApp-LindaHTV',
-//         collection: 'users'
-//     },
-//     function (err) {
-//         console.log('Ko connect DB Linda oi!' + err)
-//     });
-
-// store.on('err', function (error) {
-//     console.log(err);
-// });
-
-// app.use(session({
-//     secret: 'This is a secret',
-//     cookie: {
-//         maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
-//     },
-//     store: store,
-//     resave: true,
-//     saveUninitialized: true
-// }));
 
 var jwt = require('jsonwebtoken');
 var secret = ">SDsdungchoaibiet***";

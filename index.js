@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-app.listen(3000, console.log('Load compelete...!'))
+const port = process.env.PORT || 3000
+
 //Engine Ejs
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -156,3 +157,5 @@ app.post('/login', async function (req, res) {
         }
     })
 });
+
+app.listen(port, console.log('Load compelete...!'))

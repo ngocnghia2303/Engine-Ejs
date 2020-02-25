@@ -135,7 +135,7 @@ app.post('/sign', function (req, res) {
     })
 });
 
-//Login Chat
+//Login Chat-App
 app.get('/login', function (req, res) {
     res.render('home.ejs', { page: 'login' })
 })
